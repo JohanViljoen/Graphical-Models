@@ -1,0 +1,596 @@
+class CF09d
+{
+    inputs = ();
+    outputs = ();
+    node_size = (80 40);
+    HR_DBN_Num_Slices = "5";
+    HR_Utility_Link = "63";
+    HR_Probabilistic_Link = "63";
+    HR_Functional_Link = "63";
+    HR_Binding_Link = "63";
+    HR_Information_Arc = "63";
+    HR_ToolBar_CDVT = "0";
+    HR_Html_Desc = "0";
+    HR_HTML_Desc = "";
+    HR_Groups_IDs = "";
+    HR_Node_Label_Style = "0";
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "160";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_DiscreteFunction = "5";
+    HR_Color_Function = "4";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Mean_Variance = "1";
+    HR_Monitor_Chance_Utility = "1";
+    HR_Monitor_InitStates = "5";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "javax.swing.plaf.FontUIResource[family=Tahoma,name=Tahoma,style=plain,size=11]";
+    HR_Grid_GridShow = "0";
+    HR_Grid_GridSnap = "0";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+
+    node C21
+    {
+	label = "Transepithelial nasal\npotential difference";
+	position = (143 709);
+	states = ("Raised" "Normal");
+	HR_NodeSize = "(133, 60)";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node C20
+    {
+	label = "Clubbing";
+	position = (893 797);
+	states = ("Clubbed digits" "Normal");
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node C19
+    {
+	label = "Infertility\n";
+	position = (784 681);
+	states = ("Infertile" "Fertile");
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node C18
+    {
+	label = "Ethnicity";
+	position = (1093 83);
+	states = ("Caucasian" "Coloured" "African" "Asian");
+	HR_State_3 = "";
+	HR_LinkGroup = "[C1:0][C1_1:0][C13:0][C16:0]";
+	HR_NodeSize = "(122, 44)";
+	HR_State_2 = "";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[C1:0][C1_1:0][C16:0][C13:0]";
+    }
+
+    node C17
+    {
+	label = "Immunoreactive\ntrypsinogen (IRT)";
+	position = (1167 800);
+	states = ("Elevated" "Normal");
+	HR_NodeSize = "(120, 53)";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node C16
+    {
+	label = "Diabetes";
+	position = (541 788);
+	states = ("Diabetic" "Normal");
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node C15
+    {
+	label = "Modifier Genes\n";
+	position = (175 427);
+	states = ("CF-enhancing" "Neutral" "CF-suppressing");
+	HR_LinkGroup = "[C14:0]";
+	HR_State_2 = "";
+	HR_LinkControlPoints = "";
+	HR_NodeSize = "(97, 48)";
+	HR_LinkMode = "[C14:0]";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node C14
+    {
+	label = "CFTR functionality";
+	position = (570 362);
+	states = ("High" "Moderate" "Low");
+	HR_LinkControlPoints = "";
+	HR_LinkGroup = "[C3:0][C5:0][C9:0][C21:0]";
+	HR_State_2 = "";
+	HR_LinkMode = "[C3:0][C9:0][C5:0][C21:0]";
+	HR_NodeSize = "(116, 39)";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node C13
+    {
+	label = "Socio-economic\nClass";
+	position = (1515 400);
+	states = ("Upper" "Mid" "Lower");
+	HR_LinkGroup = "[C5:0][C11:0][C12:0]";
+	HR_NodeSize = "(114, 56)";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_2 = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[C5:0][C11:0][C12:0]";
+    }
+
+    node C12
+    {
+	label = "Pseudomonas\naeruginosa";
+	position = (1419 648);
+	states = ("Yes" "No");
+	HR_LinkGroup = "[C10:0][C11:0]";
+	HR_LinkMode = "[C11:0][C10:0]";
+	HR_NodeSize = "(107, 47)";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node C11
+    {
+	label = "Chronic\nCough";
+	position = (1702 735);
+	states = ("Yes" "No");
+	HR_NodeSize = "(99, 42)";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node C10
+    {
+	label = "Recurrent\nRTIs";
+	position = (1378 791);
+	states = ("Yes" "No");
+	HR_LinkGroup = "[C11:0]";
+	HR_LinkMode = "[C11:0]";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_NodeSize = "(91, 48)";
+    }
+
+    node C9
+    {
+	label = "Pancreatic\nInsufficiency";
+	position = (530 560);
+	states = ("None" "Mild" "Moderate" "Severe");
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_LinkControlPoints = "";
+	HR_LinkGroup = "[C16:0][C4:0]";
+	HR_LinkMode = "[C16:0][C4:0]";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_NodeSize = "(97, 43)";
+    }
+
+    node C6
+    {
+	label = "Family History";
+	position = (1049 705);
+	states = ("Yes" "No");
+	HR_NodeSize = "(114, 46)";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node C1_1
+    {
+	label = "Mother";
+	position = (1443 80);
+	states = ("Caucasian" "Coloured" "African" "Asian");
+	HR_NodeSize = "(79, 39)";
+	HR_State_3 = "Mixed";
+	HR_LinkGroup = "[C7:0]";
+	HR_LinkMode = "[C7:0][C8:0]";
+	HR_State_0 = "White";
+	HR_State_1 = "";
+	HR_Desc = "";
+	HR_State_2 = "Black";
+	HR_LinkControlPoints = "";
+	HR_HTML_Desc = "";
+	HR_Group = "0";
+    }
+
+    node C8
+    {
+	label = "Father Carrier";
+	position = (744 257);
+	states = ("\316\224F508" "3120" "Other mutation" "No");
+	HR_LinkGroup = "[C2:0]";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_NodeSize = "(103, 36)";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[C6:0][C2:0]";
+    }
+
+    node C7
+    {
+	label = "Mother Carrier";
+	position = (1447 246);
+	states = ("\316\224F508" "3120" "Other mutation" "No");
+	HR_LinkGroup = "[C2:0]";
+	HR_State_3 = "";
+	HR_State_2 = "";
+	HR_NodeSize = "(107, 41)";
+	HR_Group = "0";
+	HR_HTML_Desc = "";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[C6:0][C2:0]";
+    }
+
+    node C5
+    {
+	label = "Failure to Thrive";
+	position = (709 792);
+	states = ("Yes" "No");
+	HR_HTML_Desc = "";
+	HR_NodeSize = "(109, 40)";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "No failure to thrive (i.e. doing well)";
+	HR_State_0 = "Patient fails to thrive";
+    }
+
+    node C4
+    {
+	label = "Fecal Elastase";
+	position = (417 723);
+	states = ("Negative" "Positive");
+	HR_HTML_Desc = "";
+	HR_NodeSize = "(101, 47)";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "Positive";
+	HR_State_0 = "Negative";
+    }
+
+    node C3
+    {
+	label = "Sweat Test";
+	position = (264 779);
+	states = ("Positive" "Negative");
+	HR_HTML_Desc = "";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "Negative";
+	HR_State_0 = "Positive";
+    }
+
+    node C2
+    {
+	label = " CF Present";
+	position = (1135 336);
+	states = ("Yes" "No");
+	HR_HTML_Desc = "";
+	HR_LinkGroup = "[C6:0][C10:0][C11:0][C12:0][C14:0][C17:0][C19:0][C20:0]";
+	HR_NodeSize = "(121, 68)";
+	HR_LinkControlPoints = "";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "No";
+	HR_State_0 = "Yes";
+	HR_LinkMode = "[C6:0][C10:0][C11:0][C12:0][C14:0][C17:0][C19:0][C20:0]";
+    }
+
+    node C1
+    {
+	label = "Father";
+	position = (744 80);
+	states = ("Caucasian" "Coloured" "African" "Asian");
+	HR_NodeSize = "(79, 39)";
+	HR_State_3 = "";
+	HR_LinkGroup = "[C8:0]";
+	HR_HTML_Desc = "";
+	HR_LinkControlPoints = "";
+	HR_State_2 = "Black";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "White";
+	HR_LinkMode = "[C8:0]";
+    }
+
+    potential (C21 | C14)
+    {
+	data = (( 0.05 0.95 )	%  C14=High
+		( 0.7 0.3 )	%  C14=Moderate
+		( 0.98 0.02 ));	%  C14=Low
+    }
+
+    potential (C20 | C2)
+    {
+	data = (( 60 2 )	%  C2=Yes
+		( 2 98 ));	%  C2=No
+    }
+
+    potential (C19 | C2)
+    {
+	data = (( 9 1 )	%  C2=Yes
+		( 1 99 ));	%  C2=No
+    }
+
+    potential (C18)
+    {
+	data = ( 8 8.8 80.8 2.5 );
+    }
+
+    potential (C17 | C2)
+    {
+	data = (( 9 1 )	%  C2=Yes
+		( 1 9 ));	%  C2=No
+    }
+
+    potential (C16 | C18 C9)
+    {
+	data = ((( 3 97 )	%  C18=Caucasian  C9=None
+		 ( 20 80 )	%  C18=Caucasian  C9=Mild
+		 ( 30 70 )	%  C18=Caucasian  C9=Moderate
+		 ( 70 30 ))	%  C18=Caucasian  C9=Severe
+		(( 5 95 )	%  C18=Coloured  C9=None
+		 ( 20 80 )	%  C18=Coloured  C9=Mild
+		 ( 30 70 )	%  C18=Coloured  C9=Moderate
+		 ( 70 30 ))	%  C18=Coloured  C9=Severe
+		(( 10 90 )	%  C18=African  C9=None
+		 ( 20 80 )	%  C18=African  C9=Mild
+		 ( 30 70 )	%  C18=African  C9=Moderate
+		 ( 70 30 ))	%  C18=African  C9=Severe
+		(( 3 97 )	%  C18=Asian  C9=None
+		 ( 20 80 )	%  C18=Asian  C9=Mild
+		 ( 30 70 )	%  C18=Asian  C9=Moderate
+		 ( 70 30 )));	%  C18=Asian  C9=Severe
+    }
+
+    potential (C15)
+    {
+	data = ( 1 1 1 );
+    }
+
+    potential (C14 | C2 C15)
+    {
+	data = ((( 0 0 100 )	%  C2=Yes  C15=CF-enhancing
+		 ( 1 1 98 )	%  C2=Yes  C15=Neutral
+		 ( 30 60 10 ))	%  C2=Yes  C15=CF-suppressing
+		(( 90 7 3 )	%  C2=No  C15=CF-enhancing
+		 ( 97 2 1 )	%  C2=No  C15=Neutral
+		 ( 10 0 0 )));	%  C2=No  C15=CF-suppressing
+    }
+
+    potential (C13 | C18)
+    {
+	data = (( 10 10 10 )	%  C18=Caucasian
+		( 3 7 20 )	%  C18=Coloured
+		( 7 13 10 )	%  C18=African
+		( 10 10 10 ));	%  C18=Asian
+    }
+
+    potential (C12 | C13 C2)
+    {
+	data = ((( 10 25 )	%  C13=Upper  C2=Yes
+		 ( 1 50 ))	%  C13=Upper  C2=No
+		(( 16 25 )	%  C13=Mid  C2=Yes
+		 ( 1 10 ))	%  C13=Mid  C2=No
+		(( 30 25 )	%  C13=Lower  C2=Yes
+		 ( 1 5 )));	%  C13=Lower  C2=No
+    }
+
+    potential (C11 | C10 C12 C13 C2)
+    {
+	data = ((((( 42 29 )	%  C10=Yes  C12=Yes  C13=Upper  C2=Yes
+		   ( 6 50 ))	%  C10=Yes  C12=Yes  C13=Upper  C2=No
+		  (( 84 29 )	%  C10=Yes  C12=Yes  C13=Mid  C2=Yes
+		   ( 6 20 ))	%  C10=Yes  C12=Yes  C13=Mid  C2=No
+		  (( 168 29 )	%  C10=Yes  C12=Yes  C13=Lower  C2=Yes
+		   ( 9 10 )))	%  C10=Yes  C12=Yes  C13=Lower  C2=No
+		 ((( 14 29 )	%  C10=Yes  C12=No  C13=Upper  C2=Yes
+		   ( 2 50 ))	%  C10=Yes  C12=No  C13=Upper  C2=No
+		  (( 28 29 )	%  C10=Yes  C12=No  C13=Mid  C2=Yes
+		   ( 2 20 ))	%  C10=Yes  C12=No  C13=Mid  C2=No
+		  (( 56 29 )	%  C10=Yes  C12=No  C13=Lower  C2=Yes
+		   ( 2 10 ))))	%  C10=Yes  C12=No  C13=Lower  C2=No
+		(((( 21 29 )	%  C10=No  C12=Yes  C13=Upper  C2=Yes
+		   ( 3 50 ))	%  C10=No  C12=Yes  C13=Upper  C2=No
+		  (( 42 29 )	%  C10=No  C12=Yes  C13=Mid  C2=Yes
+		   ( 3 20 ))	%  C10=No  C12=Yes  C13=Mid  C2=No
+		  (( 84 29 )	%  C10=No  C12=Yes  C13=Lower  C2=Yes
+		   ( 3 10 )))	%  C10=No  C12=Yes  C13=Lower  C2=No
+		 ((( 7 29 )	%  C10=No  C12=No  C13=Upper  C2=Yes
+		   ( 1 50 ))	%  C10=No  C12=No  C13=Upper  C2=No
+		  (( 14 29 )	%  C10=No  C12=No  C13=Mid  C2=Yes
+		   ( 1 20 ))	%  C10=No  C12=No  C13=Mid  C2=No
+		  (( 28 29 )	%  C10=No  C12=No  C13=Lower  C2=Yes
+		   ( 1 10 )))));	%  C10=No  C12=No  C13=Lower  C2=No
+    }
+
+    potential (C10 | C12 C2)
+    {
+	data = ((( 40 23 )	%  C12=Yes  C2=Yes
+		 ( 10 10 ))	%  C12=Yes  C2=No
+		(( 20 23 )	%  C12=No  C2=Yes
+		 ( 1 10 )));	%  C12=No  C2=No
+    }
+
+    potential (C9 | C14)
+    {
+	data = (( 96 3 1 0 )	%  C14=High
+		( 3 20 8 2 )	%  C14=Moderate
+		( 1 3 7 90 ));	%  C14=Low
+    }
+
+    potential (C6 | C2)
+    {
+	data = (( 9 33 )	%  C2=Yes
+		( 1 1000 ));	%  C2=No
+    }
+
+    potential (C1_1 | C18)
+    {
+	data = (( 1 0 0 0 )	%  C18=Caucasian
+		( 0 1 0 0 )	%  C18=Coloured
+		( 0 0 1 0 )	%  C18=African
+		( 0 0 0 1 ));	%  C18=Asian
+    }
+
+    potential (C8 | C1)
+    {
+	data = (( 4 0.1 0.2 95.7 )	%  C1=Caucasian
+		( 2.5 0.55 0.35 96.6 )	%  C1=Coloured
+		( 1 1 0.5 95.8 )	%  C1=African
+		( 4 0.1 0.2 95.7 ));	%  C1=Asian
+    }
+
+    potential (C7 | C1_1)
+    {
+	data = (( 4 0.1 0.2 95.7 )	%  C1_1=Caucasian
+		( 0.2 3 0.2 96.5 )	%  C1_1=Coloured
+		( 1 1 0.5 95.8 )	%  C1_1=African
+		( 4 0.1 0.2 95.7 ));	%  C1_1=Asian
+    }
+
+    potential (C5 | C14 C13)
+    {
+	data = ((( 0.1 0.9 )	%  C14=High  C13=Upper
+		 ( 0.2 0.8 )	%  C14=High  C13=Mid
+		 ( 0.3 0.7 ))	%  C14=High  C13=Lower
+		(( 0.3 0.7 )	%  C14=Moderate  C13=Upper
+		 ( 0.5 0.5 )	%  C14=Moderate  C13=Mid
+		 ( 0.7 0.3 ))	%  C14=Moderate  C13=Lower
+		(( 0.5 0.5 )	%  C14=Low  C13=Upper
+		 ( 0.7 0.3 )	%  C14=Low  C13=Mid
+		 ( 0.8 0.2 )));	%  C14=Low  C13=Lower
+    }
+
+    potential (C4 | C9)
+    {
+	data = (( 1 9 )	%  C9=None
+		( 3 7 )	%  C9=Mild
+		( 7 3 )	%  C9=Moderate
+		( 99 1 ));	%  C9=Severe
+    }
+
+    potential (C3 | C14)
+    {
+	data = (( 0.021 0.979 )	%  C14=High
+		( 0.3 0.7 )	%  C14=Moderate
+		( 0.978 0.022 ));	%  C14=Low
+    }
+
+    potential (C2 | C7 C8)
+    {
+	data = ((( 0.25 0.75 )	%  C7=ΔF508  C8=ΔF508
+		 ( 25 75 )	%  C7=ΔF508  C8=3120
+		 ( 0.25 0.75 )	%  C7=ΔF508  C8=Other mutation
+		 ( 0.001 99.999 ))	%  C7=ΔF508  C8=No
+		(( 0.25 0.75 )	%  C7=3120  C8=ΔF508
+		 ( 25 75 )	%  C7=3120  C8=3120
+		 ( 0.25 0.75 )	%  C7=3120  C8=Other mutation
+		 ( 0.001 99.999 ))	%  C7=3120  C8=No
+		(( 0.25 0.75 )	%  C7=Other mutation  C8=ΔF508
+		 ( 25 75 )	%  C7=Other mutation  C8=3120
+		 ( 0.25 0.75 )	%  C7=Other mutation  C8=Other mutation
+		 ( 0.001 99.999 ))	%  C7=Other mutation  C8=No
+		(( 0.001 99.999 )	%  C7=No  C8=ΔF508
+		 ( 0.001 99.999 )	%  C7=No  C8=3120
+		 ( 0.001 99.999 )	%  C7=No  C8=Other mutation
+		 ( 0 1 )));	%  C7=No  C8=No
+    }
+
+    potential (C1 | C18)
+    {
+	data = (( 1 0 0 0 )	%  C18=Caucasian
+		( 0 1 0 0 )	%  C18=Coloured
+		( 0 0 1 0 )	%  C18=African
+		( 0 0 1 1 ));	%  C18=Asian
+    }
+} % class CF09d
